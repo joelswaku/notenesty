@@ -67,3 +67,23 @@ git commit -m "Update READE.MD"
 git remote add origin https://github.com/joelswaku/notenesty.git
 git branch -M main
 git push -u origin main
+
+
+Visual Studio	Git Equivalent
+Publish Branch	git push -u origin main
+Commit	git commit -m "message"
+Sync Changes	git pull + git push
+Clone Repo	git clone <url>
+
+
+
+✅ What YOU should do now
+Since your notes.react project already exists and has commits, just do:
+
+bash
+Copy
+Edit
+git remote add origin https://github.com/joelswaku/notenesty.git
+git branch -M main
+git push -u origin main
+That will connect your local project to GitHub and upload your commits.
