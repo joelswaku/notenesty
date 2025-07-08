@@ -1,0 +1,179 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Earbuds",
+      "price": 45.99,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Running Shoes",
+      "price": 89.99,
+      "category": "Fashion",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Smart Watch",
+      "price": 119.99,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/71rDQw+Jd+L._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Leather Wallet",
+      "price": 39.5,
+      "category": "Accessories",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Bluetooth Speaker",
+      "price": 65.0,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Office Chair",
+      "price": 150.0,
+      "category": "Furniture",
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Sunglasses",
+      "price": 25.99,
+      "category": "Accessories",
+      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Yoga Mat",
+      "price": 29.99,
+      "category": "Fitness",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Backpack",
+      "price": 59.99,
+      "category": "Fashion",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Gaming Mouse",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Desk Lamp",
+      "price": 22.0,
+      "category": "Home",
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Hiking Boots",
+      "price": 110.0,
+      "category": "Fashion",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Noise Cancelling Headphones",
+      "price": 130.0,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/71rDQw+Jd+L._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Stainless Steel Water Bottle",
+      "price": 19.99,
+      "category": "Fitness",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Graphic T-Shirt",
+      "price": 18.0,
+      "category": "Fashion",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Laptop Stand",
+      "price": 34.99,
+      "category": "Accessories",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Electric Kettle",
+      "price": 27.5,
+      "category": "Home",
+      "image": "https://fakestoreapi.com/img/71rDQw+Jd+L._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Jeans",
+      "price": 55.0,
+      "category": "Fashion",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Sports Watch",
+      "price": 95.0,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Dumbbell Set",
+      "price": 75.99,
+      "category": "Fitness",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Bluetooth Keyboard",
+      "price": 42.0,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Trekking Jacket",
+      "price": 120.0,
+      "category": "Fashion",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Phone Tripod",
+      "price": 21.0,
+      "category": "Accessories",
+      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Desk Organizer",
+      "price": 17.99,
+      "category": "Home",
+      "image": "https://fakestoreapi.com/img/71rDQw+Jd+L._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": 25,
+      "title": "LED Monitor",
+      "price": 250.0,
+      "category": "Electronics",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    }
+  ]
+}

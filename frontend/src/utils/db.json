@@ -1,0 +1,36 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Understanding React Hooks",
+      "author": "Jane Doe",
+      "content": "React Hooks are functions that let you use state and other React features without writing a class.",
+      "date": "2025-06-01",
+      "tags": ["React", "JavaScript", "Frontend"]
+    },
+    {
+      "id": 2,
+      "title": "Node.js Best Practices",
+      "author": "John Smith",
+      "content": "Writing clean and efficient Node.js code involves following some best practices such as using async/await, modularizing code, and handling errors gracefully.",
+      "date": "2025-05-25",
+      "tags": ["Node.js", "Backend", "JavaScript"]
+    },
+    {
+      "id": 3,
+      "title": "Introduction to Zustand",
+      "author": "Emily Turner",
+      "content": "Zustand is a small, fast and scalable bearbones state-management solution using simplified flux principles.",
+      "date": "2025-04-15",
+      "tags": ["React", "Zustand", "State Management"]
+    },
+    {
+      "id": 4,
+      "title": "Deploying with Vercel",
+      "author": "Michael Lee",
+      "content": "Vercel provides a seamless way to deploy frontend apps with minimal configuration.",
+      "date": "2025-03-30",
+      "tags": ["Deployment", "Vercel", "Next.js"]
+    }
+  ]
+}

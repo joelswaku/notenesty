@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.bg-book {
+  background-image: url('/images/book.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
