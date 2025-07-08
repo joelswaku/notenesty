@@ -62,7 +62,12 @@ git add READE.MD
 git commit -m "Update READE.MD"
 #
 
-###
+### use this part
+git remote add origin https://github.com/joelswaku/notenesty.git
+git branch -M main
+git push -u origin main
+
+##
 …or push an existing repository from the command line
 git remote add origin https://github.com/joelswaku/notenesty.git
 git branch -M main
@@ -87,3 +92,25 @@ git remote add origin https://github.com/joelswaku/notenesty.git
 git branch -M main
 git push -u origin main
 That will connect your local project to GitHub and upload your commits.
+
+
+
+
+## next time do this 
+git add .
+git commit -m "your message here"
+git push
+
+✅ Example
+Let's say you edited READE.MD again.
+
+You would do:
+
+bash
+Copy
+Edit
+git add READE.MD
+git commit -m "Update READE.MD instructions"
+git push
+That's it!
+git status
