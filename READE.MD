@@ -53,8 +53,14 @@ git status
 git add .
 git commit -m "Your message"
 git push
+##### to delete lock file
+PS C:\Users\Joel Makila\Desktop\notes.react> del .git\index.lock
+#####
 
-
+#
+git add READE.MD
+git commit -m "Update READE.MD"
+#
 
 ###
 …or push an existing repository from the command line
