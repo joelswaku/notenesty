@@ -31,9 +31,7 @@ app.use(cookieParser());
 
 
 // Routes
-app.get("/", (req, res) => {
-  res.send("API is running...");
-});
+
 
 app.use("/api/auth", authRoutes);
 app.use("/api/notes", noteRoutes);
