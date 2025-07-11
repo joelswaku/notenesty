@@ -56,6 +56,7 @@ const router = createBrowserRouter(
 
 
         <Route path="featureS" element={< Feature/>} />  
+        
       
          <Route path="/note/:id" element={<NoteDetail />} />
       <Route path="profile" element={<ProtectedRoute><Profile/></ProtectedRoute>} />

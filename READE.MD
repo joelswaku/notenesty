@@ -114,3 +114,49 @@ git commit -m "Update READE.MD instructions"
 git push
 That's it!
 git status
+
+
+
+cookies has tree part to send it ✅ Real Example from your code
+js
+Copy
+Edit
+res.cookie("token", token, {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === "production",
+  sameSite: "strict",
+  maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+});
+Breakdown:
+
+name = "token"
+
+value = your signed JWT
+
+options = the config:
+
+Option	What it means
+httpOnly	Can't access via document.cookie in JavaScript. Safer!
+secure	Cookie only sent over HTTPS if in production
+sameSite	"strict" limits cross-site requests (CSRF protection)
+maxAge	How long the cookie lasts in milliseconds
+## to decode 
+You read:
+
+js
+Copy
+Edit
+decoded.userId
+If you used:
+
+js
+Copy
+Edit
+jwt.sign({ id: user._id }, secret)
+You read:
+
+js
+Copy
+Edit
+decoded.id
+✅ That's it.
