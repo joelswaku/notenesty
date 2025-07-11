@@ -20,6 +20,7 @@ router.post("/", limiter, createNote);
 router.get("/", limiter, getAllNotes);
 router.get("/:id", getSingleNote);
 router.put("/:id", updateNote);
+router.delete("/:id" , deleteNote)
 
 router.get("/search", searchNotes);
 router.get("/:id", getSingleNote);
