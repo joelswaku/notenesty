@@ -14,7 +14,7 @@ import About from './pages/About';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import ContactLayout from './layout/ContactLayout';
-import ContactInfos from './components/Contactinfos';
+import ContactInfos from './components/ContactInfos'
 import ContactForm from './components/ContactForm';
 import NotFound from './components/NotFound';
 import CreateNote from './pages/CreateNote';
