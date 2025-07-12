@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-//import axios from '../lib/axios';
-import api from "../lib/axios";
+import axios from '../lib/axios';
+//import api from "../lib/axios";
 import { useRateLimitStore } from './useRateLimitStore';
 
 export const useNotesStore = create((set) => ({
@@ -13,7 +13,7 @@ export const useNotesStore = create((set) => ({
     set({ loading: true, error: null });
 
     try {
-      const res = await api.get('/notes');
+      const res = await axios.get('/notes');
       set({ notes: res.data, loading: false });
     } catch (err) {
       if (err.response?.status === 429) {
@@ -30,7 +30,7 @@ addNote: async ({ title, content }) => {
   const { setNotesRateLimited } = useRateLimitStore.getState();
 
   try {
-    const res = await api.post('/notes', { title, content });
+    const res = await axios.post('/notes', { title, content });
     set((state) => ({
       notes: [...state.notes, res.data],
     }));
@@ -48,7 +48,7 @@ addNote: async ({ title, content }) => {
 updateNote: async (id, updatedData) => {
   const { setNotesRateLimited } = useRateLimitStore.getState();
   try {
-    const res = await api.put(`/notes/${id}`, updatedData);
+    const res = await axios.put(`/notes/${id}`, updatedData);
     set((state) => ({
       notes: state.notes.map((note) =>
         note._id === id ? res.data : note
@@ -66,7 +66,7 @@ updateNote: async (id, updatedData) => {
 deleteNote: async (id) => {
   const { setNotesRateLimited } = useRateLimitStore.getState();
   try {
-    await api.delete(`/notes/${id}`);
+    await axios.delete(`/notes/${id}`);
     set((state) => ({
       notes: state.notes.filter((note) => note._id !== id),
     }));

@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { toast } from 'react-hot-toast';
-//import axios from '../lib/axios';
-import api from "../lib/axios";
+import axios from '../lib/axios';
+//import api from "../lib/axios";
 import { useRateLimitStore } from './useRateLimitStore';
 
 export const useUserStore = create((set) => ({
@@ -29,7 +29,7 @@ export const useUserStore = create((set) => ({
     }
 
     try {
-      const res = await api.post("/auth/signup", { name, email, password });
+      const res = await axios.post("/auth/signup", { name, email, password });
       set({ user: res.data.user, loading: false });
       toast.success("Signup successful! Please log in.");
       return true;
@@ -44,7 +44,7 @@ export const useUserStore = create((set) => ({
     set({ loading: true });
 
     try {
-      const res = await api.post("/auth/login", { email, password });
+      const res = await axios.post("/auth/login", { email, password });
      
 
       set({ user: res.data.user,  loading: false , isLoggedIn: true });
@@ -59,7 +59,7 @@ export const useUserStore = create((set) => ({
 
  logout: async () => {
   try {
-    await api.post("/auth/logout"); // 👈 calls backend to clear the cookie
+    await axios.post("/auth/logout"); // 👈 calls backend to clear the cookie
   } catch (err) {
     console.error("Logout error:", err.message);
   }
@@ -73,7 +73,7 @@ export const useUserStore = create((set) => ({
     set({ loading: true, checkingAuth: true }); // ✅ set checking
 
     try {
-      const res = await api.get("/auth/check");
+      const res = await axios.get("/auth/check");
       set({
         user: res.data.user,
         isLoggedIn: true,
@@ -106,7 +106,7 @@ export const useUserStore = create((set) => ({
 
 profile: async () => {
   try {
-    const res = await api.get("/auth/profile");
+    const res = await axios.get("/auth/profile");
     set({ user: res.data.user });
     return true;
   } catch (error) {
@@ -120,7 +120,7 @@ forgetPassword: async (email) => {
       toast.error("Please provide your email");
       return false;
     }
-    await api.post("/auth/forgot-password", { email });
+    await axios.post("/auth/forgot-password", { email });
     toast.success("Reset code sent to your email!");
     return true;
   } catch (error) {
@@ -131,7 +131,7 @@ forgetPassword: async (email) => {
 
 verifyResetCode: async (email, code) => {
   try {
-    await api.post("/auth/verify-reset-code", { email, code });
+    await axios.post("/auth/verify-reset-code", { email, code });
     toast.success("Code verified!");
     return true;
   } catch (error) {
@@ -152,7 +152,7 @@ resetPassword: async (code, password) => {
     }
 
 
-    await api.post(`/auth/reset-password/${code}`, { password }); // ✅ fixed key
+    await axios.post(`/auth/reset-password/${code}`, { password }); // ✅ fixed key
     toast.success("Password reset successfully!");
     return true;
   } catch (error) {
@@ -169,7 +169,7 @@ contactForm: async (name, email, message) => {
       toast.error("Please fill in all fields");
       return false;
     }
-    await api.post("/auth/contact", { name, email, message });
+    await axios.post("/auth/contact", { name, email, message });
     toast.success("Message sent successfully!");
     return true;
    } catch (error) {
