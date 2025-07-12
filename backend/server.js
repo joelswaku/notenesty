@@ -6,7 +6,6 @@ import path from "path";
 
 
 
-
 import connectDB from "./lib/db.js";
 import authRoutes from "./routes/auth.routes.js";
 import noteRoutes from "./routes/notesRoutes.js";
@@ -38,10 +37,14 @@ app.use("/api/notes", noteRoutes);
 
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  //app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  app.use(express.static(path.join(__dirname, "../dist")));
+
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
+    //res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
+    res.sendFile(path.join(__dirname, "../dist", "index.html"));
+
   });
 }
 
