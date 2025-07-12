@@ -9,14 +9,14 @@ import connectDB from "./lib/db.js";
 import authRoutes from "./routes/auth.routes.js";
 import noteRoutes from "./routes/notesRoutes.js";
 
-// Load environment variables
+// Load .env variables
 dotenv.config();
 
 // Fix __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Create Express app
+// Setup Express
 const app = express();
 const PORT = process.env.PORT || 5001;
 
@@ -32,18 +32,16 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/notes", noteRoutes);
 
-// Production: Serve frontend
+// 🔥 THIS IS THE FIX: serve frontend from frontend/dist
 if (process.env.NODE_ENV === "production") {
-  // Serve static files from the *dist* folder at project root
-  app.use(express.static(path.join(__dirname, "..", "dist")));
+  app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-  // For all other routes, serve index.html
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
+    res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
   });
 }
 
-// Connect to DB and start server
+// Connect to DB and run server
 connectDB().then(() => {
   app.listen(PORT, () => {
     console.log(`✅ Server running on http://localhost:${PORT}`);
