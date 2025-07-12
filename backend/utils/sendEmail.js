@@ -1,9 +1,10 @@
-import sgMail from "@sendgrid/mail";
+//import sgMail from "@sendgrid/mail";
+import sgMail from "@sendgrid/mail"
 import dotenv from "dotenv";
 
 dotenv.config();
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY); // ✅ Correct env var
+const sgMail = sgMail.setApiKey(process.env.SENDGRID_API_KEY); // ✅ Correct env var
 
 export const sendEmail = async ({ to, subject, html, text }) => {
   const msg = {
