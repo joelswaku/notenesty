@@ -78,11 +78,11 @@ app.use("/api/notes", noteRoutes);
 
 if (process.env.NODE_ENV === "production") {
  // Correctly specify the path to your frontend build directory
- app.use(express.static(path.join(__dirname, "../frontend", "dist"))); // Corrected path
+ app.use(express.static(path.join(__dirname, "/frontend", "dist"))); // Corrected path
 
  app.get("*", (req, res) => {
 // Correctly specify the path to your frontend's index.html
- res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html")); // Corrected path
+ res.sendFile(path.join(__dirname, "frontend", "dist", "index.html")); // Corrected path
 });
 }
 
