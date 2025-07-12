@@ -2,7 +2,11 @@ import axios from 'axios';
 import { useRateLimitStore } from '../store/useRateLimitStore';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5001/api',
+  //baseURL: 'http://localhost:5001/api',
+   baseURL:  import.meta.env.MODE === "development" ? "http://localhost:5000/api/auth" : "/api",
+
+
+
   withCredentials: true, // needed for cookie-based auth
 });
 
