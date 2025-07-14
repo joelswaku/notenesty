@@ -18,7 +18,5 @@ router.get("/:id", getSingleNote);
 router.put("/:id", updateNote);
 router.delete("/:id", deleteNote);
 
-// If you want a search route, add it BEFORE `/:id`:
-// router.get("/search", searchNotes);
 
 export default router;
