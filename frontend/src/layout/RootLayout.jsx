@@ -52,12 +52,14 @@ useEffect(() => {
   }
 
   return (
-    <div>
-      <ScrollToTop />
-      <NavBar />
-      <Outlet />
-      <Footer />
-    </div>
+     <div className="flex flex-col min-h-screen">
+  <ScrollToTop />
+  <NavBar />
+  <div className="flex-grow">
+    <Outlet />
+  </div>
+  <Footer />
+</div>
   );
 }
 
