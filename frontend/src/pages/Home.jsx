@@ -31,9 +31,7 @@ function Home() {
 
       {/* Right: Hero Content */}
       <div className="max-w-xl text-center space-y-6">
-      <div className='position-relative'>
-         <Link to="/todo" className='bg-white text-blue-700 font-semibold px-6 py-3 rounded-l-2xl shadow hover:bg-gray-300 transition absolute right-30  top-30'>to to-list</Link>
-      </div>
+      
         <div className="bg-blue-600 rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg">
             
           <span className="text-2xl font-bold">📝</span>
